@@ -1,24 +1,60 @@
 .App {
-  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  color: #767071;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.Home {
+  position: relative;
+  margin: 80px 10% 0 10%;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.ImagePanel {
+  position: absolute;
+  right: 0;
+  margin: 120px 0;
+  padding: 0 5% 4% 0;
 }
 
-.App-intro {
-  font-size: large;
+.ImagePanel img {
+  width: 640px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.red {
+  background-color: #ea394f;
+}
+
+.vert-line {
+  position: absolute;
+  width: 2px;
+  height: 140px;
+}
+
+.top {
+  left: 0;
+  top: 0;
+}
+
+.bottom {
+  right: 0;
+  bottom: 0;
+}
+
+.IntroPanel {
+  position: absolute;
+  padding: 0.3% 0% 5.5% 5%;
+  font-size: 24px;
+  width: 480px;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.95);
+  z-index: 2;
+}
+
+.larger {
+  color: #ea394f;
+  font-size: 44px;
+}
+
+.IntroPanel span {
+  font-weight: 300;
+  color: #625c5c;
 }
