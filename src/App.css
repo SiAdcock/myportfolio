@@ -58,3 +58,34 @@
   font-weight: 300;
   color: #625c5c;
 }
+
+.Menu {
+  float: right;
+  line-height: 0;
+  height: 30px;
+  border: solid 2px #ea394f;
+}
+
+.burger-menu {
+  margin-top: -2px;
+  display: inline-block;
+}
+
+.burger {
+  width: 44px;
+  height: 2px;
+  margin-bottom: 14px;
+  margin-left: 20px;
+  background-color: #ea394f;
+}
+
+.burger:last-of-type {
+  margin-bottom: 0;
+}
+
+.Menu__link {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 14px;
+  padding-left: 10px;
+}

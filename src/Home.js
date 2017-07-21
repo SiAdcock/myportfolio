@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import IntroPanel from './IntroPanel';
 import ImagePanel from './ImagePanel';
-import BurgerMenu from './BurgerMenu';
+import Menu from './Menu';
 
 class Home extends Component {
   render() {
@@ -10,7 +10,7 @@ class Home extends Component {
       <div className="Home">
         <IntroPanel />
         <ImagePanel />
-        <BurgerMenu />
+        <Menu />
       </div>
     );
   }
