@@ -1,56 +1,37 @@
 .App {
+  overflow: auto;
   font-family: 'Quicksand', sans-serif;
   color: #767071;
+  background-image: url('luke-bg.jpg');
+  background-size: 100%;
 }
 
-.Home {
-  position: relative;
-  margin: 80px 10% 0 10%;
+.Menu {
+  color: #ea394f;
+  font-size: 20px;
+  font-weight: 500;
+  height: 80px;
+  line-height: 80px;
+  background: rgba(255, 255, 255, 0.95);
+  padding-right: 40px;
 }
 
-.ImagePanel {
-  position: absolute;
-  right: 0;
-  margin: 120px 0;
-  padding: 0 5% 4% 0;
-}
-
-.ImagePanel img {
-  width: 640px;
-}
-
-.red {
-  background-color: #ea394f;
-}
-
-.vert-line {
-  position: absolute;
-  width: 2px;
-  height: 140px;
-}
-
-.top {
-  left: 0;
-  top: 0;
-}
-
-.bottom {
-  right: 0;
-  bottom: 0;
+.Menu__link {
+  float: right;
+  margin-right: 20px;
 }
 
 .IntroPanel {
-  position: absolute;
-  padding: 0.3% 0% 5.5% 5%;
+  overflow: auto;
   font-size: 24px;
-  width: 480px;
   background: #fff;
   background: rgba(255, 255, 255, 0.95);
-  z-index: 2;
+  padding-bottom: 100px;
 }
 
 .larger {
   color: #ea394f;
+  font-weight: 500;
   font-size: 44px;
 }
 
@@ -59,33 +40,40 @@
   color: #625c5c;
 }
 
-.Menu {
+.CircleImage {
+  margin-top: 20px;
+  border-radius: 100%;
+  width: 360px;
+  height: 360px;
   float: right;
-  line-height: 0;
-  height: 30px;
-  border: solid 2px #ea394f;
+  overflow: hidden;
 }
 
-.burger-menu {
-  margin-top: -2px;
-  display: inline-block;
+.CircleImage img {
+  margin-left: -60px;
 }
 
-.burger {
-  width: 44px;
-  height: 2px;
-  margin-bottom: 14px;
-  margin-left: 20px;
-  background-color: #ea394f;
+.container {
+  padding: 0 20px;
 }
 
-.burger:last-of-type {
-  margin-bottom: 0;
+@media (min-width: 768px) {
+  .container {
+    padding: 0;
+    margin: 0 auto;
+    width: 80%;
+  }
 }
 
-.Menu__link {
-  display: inline-block;
-  vertical-align: top;
-  padding-top: 14px;
-  padding-left: 10px;
+@media (min-width: 992px) {
+  .container {
+    padding: 0;
+    margin: 0 auto;
+    width: 70%;
+  }
+}
+
+.col-6 {
+  float: left;
+  width: 50%;
 }

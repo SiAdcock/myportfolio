@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
 
-import IntroPanel from './IntroPanel';
-import ImagePanel from './ImagePanel';
 import Menu from './Menu';
+import IntroPanel from './IntroPanel';
 
 class Home extends Component {
   render() {
     return (
       <div className="Home">
-        <IntroPanel />
-        <ImagePanel />
         <Menu />
+        <IntroPanel />
       </div>
     );
   }
