@@ -1,6 +1,7 @@
 .App {
   overflow: auto;
   font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
   color: #767071;
   background-image: url('luke-bg.jpg');
   background-size: 100%;
@@ -12,7 +13,7 @@
   font-weight: 500;
   height: 80px;
   line-height: 80px;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.90);
   padding-right: 40px;
 }
 
@@ -23,9 +24,8 @@
 
 .IntroPanel {
   overflow: auto;
-  font-size: 24px;
   background: #fff;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.90);
   padding-bottom: 100px;
 }
 
@@ -35,22 +35,33 @@
   font-size: 44px;
 }
 
-.IntroPanel span {
+.regular {
   font-weight: 300;
   color: #625c5c;
 }
 
 .CircleImage {
-  margin-top: 20px;
+  margin-top: 40px;
   border-radius: 100%;
-  width: 360px;
-  height: 360px;
+  width: 320px;
+  height: 320px;
   float: right;
   overflow: hidden;
 }
 
 .CircleImage img {
-  margin-left: -60px;
+  margin-left: -56px;
+  width: 500px;
+}
+
+.AboutPanel {
+  overflow: auto;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 180px 0;
+}
+
+.jslogo {
+  width: 100%;
 }
 
 .container {
@@ -73,7 +84,18 @@
   }
 }
 
+.col-8 {
+  float: left;
+  width: 60.3333333%;
+  margin-left: 6%;
+}
+
 .col-6 {
   float: left;
   width: 50%;
+}
+
+.col-4 {
+  float: left;
+  width: 33.3333333%;
 }
