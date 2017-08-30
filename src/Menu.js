@@ -4,14 +4,10 @@ class Menu extends Component {
   render() {
     return (
       <div className="Menu">
-        <div className="Menu__link">home</div>
-        <div className="Menu__link">work</div>
-        <div className="Menu__link">about</div>
-        <div className="burger-menu">
-          <div className="burger burger-1"></div>
-          <div className="burger burger-2"></div>
-          <div className="burger burger-3"></div>
-        </div>
+        <div className="menu__link"><span className="cross cross--active">+ </span>home</div>
+        <div className="menu__link"><span className="cross">+ </span>now</div>
+        <div className="menu__link"><span className="cross">+ </span>projects</div>
+        <div className="menu__link"><span className="cross">+ </span>about</div>
       </div>
     );
   }

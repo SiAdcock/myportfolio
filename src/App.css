@@ -1,38 +1,61 @@
 .App {
   overflow: auto;
   font-family: 'Quicksand', sans-serif;
-  font-size: 24px;
+  font-size: 14px;
   color: #767071;
-  background-image: url('luke-bg.jpg');
+  /*background-image: url('luke-bg.jpg');*/
   background-size: 100%;
 }
 
 .Menu {
-  color: #ea394f;
-  font-size: 20px;
-  font-weight: 500;
-  height: 80px;
-  line-height: 80px;
-  background: rgba(255, 255, 255, 0.90);
-  padding-right: 40px;
+  color: #363535;
+  text-align: center;
 }
 
-.Menu__link {
-  float: right;
-  margin-right: 20px;
+.menu__link {
+  position: relative;
+  width: 118%;
+  margin-left: -18%;
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.menu__link:last-of-type {
+  border-bottom: none;
+}
+
+.cross {
+  display: inline-block;
+  position: absolute;
+  top: 19px;
+  left: 50px;
+  color: #ea394f;
+  font-weight: 700;
+  opacity: 0;
+  transform: rotate(-275deg);
+  transition: opacity 1s, left 1s, transform 1s;
+}
+
+.menu__link:hover .cross, .cross--active {
+  transform: rotate(0);
+  left: 90px;
+  opacity: 1;
 }
 
 .IntroPanel {
-  overflow: auto;
-  background: #fff;
-  background: rgba(255, 255, 255, 0.90);
-  padding-bottom: 100px;
+  width: 230px;
+  text-align: center;
+  padding: 20px 0px 20px 20px;
+  margin-top: 70px;
+  border-right: 1px solid #eee;
 }
 
-.larger {
+.intro-text {
+  margin-right: 18%;
   color: #ea394f;
   font-weight: 500;
-  font-size: 44px;
+  font-size: 14px;
+  font-style: italic;
 }
 
 .regular {
@@ -41,22 +64,16 @@
 }
 
 .CircleImage {
-  margin-top: 40px;
-  border-radius: 100%;
-  width: 320px;
-  height: 320px;
-  float: right;
-  overflow: hidden;
+  text-align: center;
+  margin-right: 18%;
 }
 
 .CircleImage img {
-  margin-left: -56px;
-  width: 500px;
+  width: 160px;
 }
 
 .AboutPanel {
   overflow: auto;
-  background: rgba(255, 255, 255, 0.8);
   padding: 180px 0;
 }
 
@@ -72,7 +89,7 @@
   .container {
     padding: 0;
     margin: 0 auto;
-    width: 80%;
+    width: 85%;
   }
 }
 
@@ -80,7 +97,7 @@
   .container {
     padding: 0;
     margin: 0 auto;
-    width: 70%;
+    width: 80%;
   }
 }
 
@@ -98,4 +115,9 @@
 .col-4 {
   float: left;
   width: 33.3333333%;
+}
+
+.col-3 {
+  float: left;
+  width: 22%;
 }

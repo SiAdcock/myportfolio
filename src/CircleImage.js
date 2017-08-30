@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import luke from './luke.png';
+import luke from './luke1.png';
 
 class CircleImage extends Component {
   render() {
