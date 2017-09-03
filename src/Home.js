@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 
-import IntroPanel from './IntroPanel';
-import AboutPanel from './AboutPanel';
+import SidePanel from './SidePanel';
 
 class Home extends Component {
   render() {
     return (
       <div className="Home">
         <div className="container">
-          <IntroPanel />
+          <SidePanel />
         </div>
       </div>
     );

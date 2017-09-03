@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 
+import MenuLink from './MenuLink';
+
 class Menu extends Component {
   render() {
     return (
       <div className="Menu">
-        <div className="menu__link"><span className="cross cross--active">+ </span>home</div>
-        <div className="menu__link"><span className="cross">+ </span>now</div>
-        <div className="menu__link"><span className="cross">+ </span>projects</div>
-        <div className="menu__link"><span className="cross">+ </span>about</div>
+        <MenuLink linkname="home" />
+        <MenuLink linkname="now" />
+        <MenuLink linkname="projects" />
+        <MenuLink linkname="about" />
       </div>
     );
   }

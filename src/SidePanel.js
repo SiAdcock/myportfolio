@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 import Menu from './Menu';
 import CircleImage from './CircleImage';
 
-class IntroPanel extends Component {
+class SidePanel extends Component {
   render() {
     return (
-      <div className="IntroPanel">
+      <div className="SidePanel">
         <CircleImage />
         <p className="intro-text">Front End Web Developer / Extreme Metal Connoisseur / Psychedelic Rock Appreciator / Amateur (very) Philosopher / Annihilator of Articulation.</p>
         <Menu />
@@ -15,4 +15,4 @@ class IntroPanel extends Component {
   }
 }
 
-export default IntroPanel;
+export default SidePanel;
