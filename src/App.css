@@ -1,3 +1,10 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 .App {
   overflow: auto;
   font-family: 'Quicksand', sans-serif;
@@ -5,6 +12,11 @@
   color: #767071;
   /*background-image: url('luke-bg.jpg');*/
   background-size: 100%;
+}
+
+h1 {
+  font-family: 'Quicksand', sans-serif;
+  color: #767071;
 }
 
 .Menu {
@@ -43,7 +55,8 @@
 }
 
 .SidePanel {
-  width: 230px;
+  float: left;
+  width: 250px;
   text-align: center;
   padding: 20px 0px 20px 20px;
   margin-top: 70px;
@@ -83,6 +96,60 @@
 
 .container {
   padding: 0 20px;
+}
+
+.Page {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.1;
+  width: calc(100% - 271px);
+  padding: 80px 150px 0 50px;
+  /*font-family: 'Gentium Book Basic', serif;*/
+  /*font-family: 'Merriweather', serif;*/
+  font-family: 'Lora', serif;
+}
+
+h1 {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 300;
+  font-size:50px;
+}
+
+.Qpanel {
+  position: relative;
+  background-color: #ea394f;
+  color: #fff;
+  margin: 60px 0;
+  padding: 70px 70px 30px 70px;
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+  line-height: 1.7;
+}
+
+.bigQ {
+  display: inline-block;
+  top: 10px;
+  left: calc(50% - 17px);
+  position: absolute;
+  font-size: 90px;
+}
+
+.Qauthor {
+  font-style: normal;
+  font-size: 20px;
+}
+
+.Hero {
+  display: inline-block;
+  width: 70%
+}
+
+.Hero img {
+  width: 100%;
 }
 
 @media (min-width: 768px) {
