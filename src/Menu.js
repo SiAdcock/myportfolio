@@ -6,10 +6,10 @@ class Menu extends Component {
   render() {
     return (
       <div className="Menu">
-        <MenuLink linkname="home" />
-        <MenuLink linkname="now" />
-        <MenuLink linkname="projects" />
-        <MenuLink linkname="about" />
+        <MenuLink linkname="home" linkref="/" />
+        <MenuLink linkname="now" linkref="/now"/>
+        <MenuLink linkname="projects" linkref="/projects"/>
+        <MenuLink linkname="about" linkref="/about"/>
       </div>
     );
   }

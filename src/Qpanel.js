@@ -4,7 +4,7 @@ class Qpanel extends Component {
   render() {
     return (
       <div className="Qpanel">
-        <p><span className="bigQ">&ldquo;</span> Thank you for not making my design look like dog shite<span className="Qauthor"><br />- a designer to me</span></p>
+        <p><span className="bigQ">&ldquo;</span> {this.props.Qtext}<span className="Qauthor"><br />- {this.props.Qauthor}</span></p>
       </div>
     );
   }
