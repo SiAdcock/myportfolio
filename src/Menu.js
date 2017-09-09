@@ -9,7 +9,6 @@ class Menu extends Component {
         <MenuLink linkname="home" linkref="/" />
         <MenuLink linkname="now" linkref="/now"/>
         <MenuLink linkname="projects" linkref="/projects"/>
-        <MenuLink linkname="about" linkref="/about"/>
       </div>
     );
   }

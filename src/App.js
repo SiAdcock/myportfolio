@@ -5,8 +5,8 @@ import { Route } from 'react-router-dom'
 import './App.css';
 
 import SidePanel from './SidePanel';
-import Page from './Page';
-import Qpanel from './Qpanel';
+import Home from './Home';
+import Now from './Now';
 
 class App extends Component {
   render() {
@@ -14,16 +14,9 @@ class App extends Component {
       <div className="App">
         <div className="container">
           <SidePanel />
-          <Route exact path="/" component={Page}/>
-          <Route path="/now" component={Page}/>
+          <Route exact path="/" component={Home}/>
+          <Route path="/now" component={Now}/>
 
-          {/* <Page>
-
-            <Qpanel
-              Qtext="Thank you for not making my design look like dog shite"
-              Qauthor="a designer to me"
-            />
-          </Page> */}
         </div>
       </div>
     );
