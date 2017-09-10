@@ -43,7 +43,7 @@ a {
   transition: opacity 1s, left 1s, transform 1s;
 }
 
-.menu__link:hover .cross, .cross--active {
+.menu__link:hover .cross, .cross--active .menu__link .cross {
   transform: rotate(0);
   left: 90px;
   opacity: 1;

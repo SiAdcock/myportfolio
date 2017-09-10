@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 class MenuLink extends Component {
   render() {
     return (
-      <Link to={this.props.linkref}>
+      <NavLink exact to={this.props.linkref} activeClassName="cross--active">
         <div className="menu__link"><span className="cross">+ </span>{this.props.linkname}</div>
-      </Link>
+      </NavLink>
     );
   }
 }
