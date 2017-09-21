@@ -50,12 +50,20 @@ a {
 }
 
 .SidePanel {
+  display: none;
+  position: fixed;
   float: left;
   width: 250px;
   text-align: center;
   padding: 60px 0px 0 20px;
   margin-top: 0;
   border-right: 1px solid #eee;
+}
+
+@media (min-width: 700px) {
+  .SidePanel {
+    display: block;
+  }
 }
 
 .intro-text {
@@ -73,7 +81,7 @@ a {
 
 .CircleImage {
   text-align: center;
-  margin-right: 18%;
+  margin-right: 38px;
 }
 
 .CircleImage img {
@@ -98,11 +106,30 @@ a {
   font-size: 16px;
   font-weight: 500;
   line-height: 2.1;
-  width: calc(100% - 271px);
-  padding: 60px 150px 0 50px;
+  max-width: 613px;
+  margin-left: 0;
+  padding: 80px 0 0 0;
   /*font-family: 'Gentium Book Basic', serif;*/
   /*font-family: 'Merriweather', serif;*/
   font-family: 'Lora', serif;
+}
+
+@media (min-width: 417px) {
+  .page {
+    padding: 60px 0 0 20px;
+  }
+}
+
+@media (min-width: 700px) {
+  .page {
+    margin-left: 271px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page {
+    padding: 60px 0 0 30px;
+  }
 }
 
 h1 {
@@ -111,8 +138,41 @@ h1 {
   margin-top: 11px;
   margin-bottom: 30px;
   font-weight: 300;
-  font-size:50px;
+  font-size:20px;
   line-height: 1.4;
+  padding: 20px 34px 26px 34px;
+  border: solid 1px #eee;
+  background-color: #fdfdfd;
+}
+
+@media (min-width: 360px) {
+  h1 {
+    padding: 40px 54px 46px 54px;
+  }
+}
+
+@media (min-width: 511px) {
+  h1 {
+    font-size: 34px;
+  }
+}
+
+@media (min-width: 700px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 840px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1055px) {
+  h1 {
+    font-size: 44px;
+  }
 }
 
 h2 {
@@ -124,13 +184,6 @@ h2 {
   /*color: #ea394f;*/
 }
 
-.home h1 {
-  font-size:44px;
-  padding: 40px 54px 46px 54px;
-  border: solid 1px #eee;
-  background-color: #fdfdfd;
-}
-
 .red {
   color: #ea394f;
 }
@@ -140,26 +193,45 @@ h2 {
   background-color: #ea394f;
   color: #fff;
   margin: 40px 0;
-  padding: 70px 70px 30px 70px;
+  padding: 50px 50px 10px 50px;
   text-align: center;
   font-style: italic;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 1.7;
+}
+
+@media (min-width: 768px) {
+  .Qpanel {
+    padding: 70px 70px 30px 70px;
+    font-size: 30px;
+  }
 }
 
 .bigQ {
   display: inline-block;
-  top: 10px;
+  top: -10px;
   left: calc(50% - 17px);
   position: absolute;
   font-size: 90px;
+}
+
+@media (min-width: 768px) {
+  .bigQ {
+    top: 10px;
+  }
 }
 
 .Qauthor {
   display: inline-block;
   font-style: normal;
   line-height: 1.4;
-  font-size: 20px;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .Qauthor {
+    font-size: 20px;
+  }
 }
 
 .social {
@@ -250,4 +322,16 @@ h2 {
 .col-3 {
   float: left;
   width: 22%;
+}
+
+
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 400ms ease-in;
 }

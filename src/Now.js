@@ -5,7 +5,7 @@ import Qpanel from './Qpanel';
 class Now extends Component {
   render() {
     return (
-      <div className="home page">
+      <div className="page">
 
         <h1>What I'm Doing <span className="red">Now</span></h1>
 

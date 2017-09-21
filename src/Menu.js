@@ -5,7 +5,7 @@ import MenuLink from './MenuLink';
 class Menu extends Component {
   render() {
     return (
-      <div className="Menu">
+      <div className={"Menu "+this.props.isMobile}>
         <MenuLink linkname="home" linkref="/" />
         <MenuLink linkname="now" linkref="/now"/>
         <MenuLink linkname="projects" linkref="/projects"/>
